@@ -2,9 +2,14 @@
 ```markdown
 # 🎓 Student CRUD API - Laravel 
 
-![Student CRUD ThunderClient Test](./asset/image/screenshot/thunderclient-students.png)
-
-*✅ GET /api/students - Successfully retrieved all student records (David, Moses, Ruth, Paul)*
+<p align="center">
+  <img src="https://github.com/melody-sheep/liga_activity_2_integ_prog_-_tools/blob/main/asset/image/screenshot/thunderclient-students.png?raw=true" 
+       alt="Student CRUD ThunderClient Test" 
+       width="100%" />
+</p>
+<p align="center">
+  <em>✅ GET /api/students - Successfully retrieved all student records (David, Moses, Ruth, Paul)</em>
+</p>
 
 ---
 

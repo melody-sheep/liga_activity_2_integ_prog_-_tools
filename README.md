@@ -1,6 +1,6 @@
 
 ```markdown
-# 🎓 Student CRUD API - Laravel
+# 🎓 Student CRUD API - Laravel 
 
 ![Student CRUD ThunderClient Test](./asset/image/screenshot/thunderclient-students.png)
 
@@ -194,3 +194,5 @@ php artisan serve
 **Melody Sheep**  
 📧 GitHub: [@melody-sheep](https://github.com/melody-sheep)  
 📁 Repository: [liga_activity_2_integ_prog_-_tools](https://github.com/melody-sheep/liga_activity_2_integ_prog_-_tools)
+
+---Liga Alther

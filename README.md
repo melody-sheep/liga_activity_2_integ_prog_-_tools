@@ -1,15 +1,14 @@
 
-
 ```markdown
 # 🎓 Student CRUD API - Laravel
 
-![Student CRUD ThunderClient Test](asset/image/screenshot/thunderclient-students.png)
+![Student CRUD ThunderClient Test](./asset/image/screenshot/thunderclient-students.png)
 
 *✅ GET /api/students - Successfully retrieved all student records (David, Moses, Ruth, Paul)*
 
 ---
 
-A fully functional **RESTful API** built with Laravel that performs CRUD operations on student records featuring biblical names. This project demonstrates API development, database migrations, Eloquent ORM, and ThunderClient testing.
+A fully functional **RESTful API** built with Laravel that performs CRUD operations on student records featuring basic information. This project demonstrates API development, database migrations, Eloquent ORM, and ThunderClient testing.
 
 ---
 
@@ -160,24 +159,6 @@ GET http://127.0.0.1:8000/api/students/4
 
 ---
 
-## 📂 Project Structure
-
-```
-app/
-├── Http/Controllers/
-│   ├── Controller.php
-│   └── StudentController.php
-├── Models/
-│   └── Student.php
-database/
-├── migrations/
-│   └── 2026_02_11_141506_create_students_table.php
-routes/
-└── api.php
-```
-
----
-
 ## 🚀 How to Run
 
 ```bash
@@ -203,7 +184,7 @@ php artisan migrate
 php artisan serve
 
 # 7. Test with ThunderClient
-# Import the collection or test manually using endpoints above
+# Use the endpoints above
 ```
 
 ---
@@ -213,15 +194,3 @@ php artisan serve
 **Melody Sheep**  
 📧 GitHub: [@melody-sheep](https://github.com/melody-sheep)  
 📁 Repository: [liga_activity_2_integ_prog_-_tools](https://github.com/melody-sheep/liga_activity_2_integ_prog_-_tools)
-
----
-
-## 📄 License
-
-This project is open-sourced under the MIT license.
-
----
-
-✅ **Activity 2 - IT322 Laravel CRUD - COMPLETED** 🎉
-```
-

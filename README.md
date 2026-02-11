@@ -3,7 +3,7 @@
 ```markdown
 # 🎓 Student CRUD API - Laravel
 
-![Student CRUD ThunderClient Test](asset/image/screenshot/thunderclient-students.png)
+![Student CRUD ThunderClient Test](./asset/image/screenshot/thunderclient-students.png)
 
 *✅ GET /api/students - Successfully retrieved all student records (David, Moses, Ruth, Paul)*
 

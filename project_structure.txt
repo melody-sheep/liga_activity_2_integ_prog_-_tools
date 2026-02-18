@@ -1,0 +1,101 @@
+liga_activity_3_integ_prog_tools/
+├── .editorconfig
+├── .gitattributes
+├── .gitignore
+├── artisan
+├── composer.json
+├── composer.lock
+├── package.json
+├── phpunit.xml
+├── README.md
+├── vite.config.js
+│
+├── app/
+│   ├── Http/
+│   │   └── Controllers/
+│   │       ├── Controller.php
+│   │       └── StudentController.php
+│   ├── Models/
+│   │   ├── Student.php
+│   │   └── User.php
+│   └── Providers/
+│       └── AppServiceProvider.php
+│
+├── asset/
+│   └── image/
+│       └── screenshot/
+│           └── thunderclient-students.png
+│
+├── bootstrap/
+│   ├── app.php
+│   ├── providers.php
+│   └── cache/
+│       └── .gitignore
+│
+├── config/
+│   ├── app.php
+│   ├── auth.php
+│   ├── cache.php
+│   ├── database.php
+│   ├── filesystems.php
+│   ├── logging.php
+│   ├── mail.php
+│   ├── queue.php
+│   ├── services.php
+│   └── session.php
+│
+├── database/
+│   ├── .gitignore
+│   ├── factories/
+│   │   └── UserFactory.php
+│   ├── migrations/
+│   │   ├── 0001_01_01_000000_create_users_table.php
+│   │   ├── 0001_01_01_000001_create_cache_table.php
+│   │   ├── 0001_01_01_000002_create_jobs_table.php
+│   │   └── 2026_02_11_141506_create_students_table.php
+│   └── seeders/
+│       └── DatabaseSeeder.php
+│
+├── public/
+│   ├── .htaccess
+│   ├── favicon.ico
+│   ├── index.php
+│   └── robots.txt
+│
+├── resources/
+│   ├── css/
+│   │   └── app.css
+│   ├── js/
+│   │   ├── app.js
+│   │   └── bootstrap.js
+│   └── views/
+│       └── welcome.blade.php
+│
+├── routes/
+│   ├── api.php
+│   ├── console.php
+│   ├── test.php
+│   └── web.php
+│
+├── storage/
+│   ├── app/
+│   │   └── .gitignore
+│   ├── framework/
+│   │   ├── .gitignore
+│   │   ├── cache/
+│   │   │   └── .gitignore
+│   │   ├── sessions/
+│   │   │   └── .gitignore
+│   │   ├── testing/
+│   │   │   └── .gitignore
+│   │   └── views/
+│   │       └── .gitignore
+│   └── logs/
+│       └── .gitignore
+│
+└── tests/
+    ├── TestCase.php
+    ├── Feature/
+    │   └── ExampleTest.php
+    └── Unit/
+        └── ExampleTest.php

@@ -7,97 +7,42 @@ use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth:sanctum');
+    }
+
     public function index()
     {
-        $students = Student::all();
-        return response()->json([
-            'success' => true,
-            'message' => 'Students retrieved successfully',
-            'data' => $students
-        ], 200);
+        return Student::all();
     }
 
     public function store(Request $request)
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|email|unique:students,email',
-            'course' => 'required|string|max:255'
+            'email' => 'required|email|unique:students',
+            // add other fields validation
         ]);
 
-        $student = Student::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'course' => $request->course
-        ]);
-
-        return response()->json([
-            'success' => true,
-            'message' => 'Student created successfully',
-            'data' => $student
-        ], 201);
+        $student = Student::create($request->all());
+        return response()->json($student, 201);
     }
 
-    public function show(string $id)
+    public function show(Student $student)
     {
-        $student = Student::find($id);
-        
-        if (!$student) {
-            return response()->json([
-                'success' => false,
-                'message' => 'Student not found'
-            ], 404);
-        }
-
-        return response()->json([
-            'success' => true,
-            'message' => 'Student retrieved successfully',
-            'data' => $student
-        ], 200);
+        return $student;
     }
 
-    public function update(Request $request, string $id)
+    public function update(Request $request, Student $student)
     {
-        $student = Student::find($id);
-        
-        if (!$student) {
-            return response()->json([
-                'success' => false,
-                'message' => 'Student not found'
-            ], 404);
-        }
-
-        $request->validate([
-            'name' => 'sometimes|string|max:255',
-            'email' => 'sometimes|email|unique:students,email,' . $id,
-            'course' => 'sometimes|string|max:255'
-        ]);
-
-        $student->update($request->only(['name', 'email', 'course']));
-
-        return response()->json([
-            'success' => true,
-            'message' => 'Student updated successfully',
-            'data' => $student
-        ], 200);
+        $student->update($request->all());
+        return response()->json($student);
     }
 
-    public function destroy(string $id)
+    public function destroy(Student $student)
     {
-        $student = Student::find($id);
-        
-        if (!$student) {
-            return response()->json([
-                'success' => false,
-                'message' => 'Student not found'
-            ], 404);
-        }
-
         $student->delete();
-
-        return response()->json([
-            'success' => true,
-            'message' => 'Student deleted successfully'
-        ], 200);
+        return response()->json(['message' => 'Student deleted']);
     }
 }
